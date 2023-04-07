@@ -1,9 +1,10 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { SelectedPage } from "@/shared/types";
 
 type Props = {
   page: string;
-  selectedPage: string;
-  setSelectedPage: (value: string) => void; // function
+  selectedPage: SelectedPage;
+  setSelectedPage: (value: SelectedPage) => void; // function
 }
 
 const Link = ({
@@ -13,7 +14,7 @@ const Link = ({
 }: Props) => {
   // turning name of each link to lower case without any space
   // to conform to the requirement of id names
-  const lowerCasePage = page.toLowerCase().replace(/ /g, "");
+  const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage; // telling TS to treat this as the enum value
 
   return (
     <AnchorLink 
