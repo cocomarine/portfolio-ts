@@ -4,7 +4,7 @@ import { SelectedPage } from "@/shared/types";
 type Props = {
   page: string;
   selectedPage: SelectedPage;
-  setSelectedPage: (value: SelectedPage) => void; // function
+  setSelectedPage: (value: SelectedPage) => void;
 }
 
 const Link = ({
@@ -12,15 +12,14 @@ const Link = ({
   selectedPage,
   setSelectedPage,
 }: Props) => {
-  // turning name of each link to lower case without any space
-  // to conform to the requirement of id names
-  const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage; // telling TS to treat this as the enum value
+  // removing space from page nam and making it lower case
+  const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage;
 
   return (
     <AnchorLink 
-      className={`${selectedPage === lowerCasePage ? "text-primary-500" : ""}
+      className={`${selectedPage === lowerCasePage ? "text-taupe" : ""}
         transition duration-500 hover:text-primary-300
-      `} // when selected, color changed. when hover over it, again color changed with transition
+      `} 
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >

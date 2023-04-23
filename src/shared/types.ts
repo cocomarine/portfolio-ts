@@ -1,7 +1,9 @@
 // PascalCase for enum
 export enum SelectedPage {
   Home = "home",
-  Benefits = "benefits",
-  OurClasses = "outclasses",
-  ContactUs = "contactus"
+  About = "about",
+  Work = "work",
+  Contact = "contact",
+  LinkedIn = "linkedin",
+  GitHub = "github",
 }

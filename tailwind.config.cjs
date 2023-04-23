@@ -6,11 +6,28 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        wave: {
+            '0%': { transform: 'rotate(0.0deg)' },
+            '15%': { transform: 'rotate(14.0deg)' },
+            '30%': { transform: 'rotate(-8.0deg)' },
+            '40%': { transform: 'rotate(14.0deg)' },
+            '50%': { transform: 'rotate(-4.0deg)' },
+            '60%': { transform: 'rotate(10.0deg)' },
+            '70%': { transform: 'rotate(0.0deg)' },
+            '100%': { transform: 'rotate(0.0deg)' },
+        },
+      },
+      animation: {
+        wave: 'wave 2s 3',
+      },
       colors: {
         "gray-20": "#F8F4EB",
         "gray-50": "#EFE6E6",
         "gray-100": "#DFCCCC",
         "gray-500": "#5E0000",
+        "taupe": "#4c453a",
+        "black": "#060606",
         "primary-100": "#FFE1E0",
         "primary-300": "#FFA6A3",
         "primary-500": "#FF6B66",
