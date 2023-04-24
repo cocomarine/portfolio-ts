@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
 import About from "@/scenes/about";
+import Work from "@/scenes/work";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home); // using enum
@@ -31,6 +32,7 @@ function App() {
       />
       <Home setSelectedPage={setSelectedPage} />
       <About setSelectedPage={setSelectedPage} />
+      <Work setSelectedPage={setSelectedPage} />
     </div>
   )
 }

@@ -34,7 +34,8 @@ const About = ({setSelectedPage}: Props) => {
 
   return <section
       id="about"
-      className="mx-auto min-h-full w-3/5 py-20"
+      // className="mx-auto min-h-full w-3/5 py-20"
+      className="mx-auto w-3/5 py-20"
     >
       <div className="md:my-5" ref={pageRef}>
         <HText>About Me</HText>

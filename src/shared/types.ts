@@ -7,3 +7,8 @@ export enum SelectedPage {
   LinkedIn = "linkedin",
   GitHub = "github",
 }
+
+export interface WorkType {
+  title: string,
+  description: string,
+}
