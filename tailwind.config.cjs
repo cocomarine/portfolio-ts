@@ -19,7 +19,7 @@ module.exports = {
         },
       },
       animation: {
-        wave: 'wave 2s 3',
+        wave: 'wave 2s 2',
       },
       colors: {
         "gray-20": "#F8F4EB",
