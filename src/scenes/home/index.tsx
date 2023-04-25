@@ -25,7 +25,8 @@ function Home({ setSelectedPage }: Props) {
         <div className="relative"> 
           <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1]">
             <motion.div
-              className="md:-mt-20 pb-10"
+              // className="md:-mt-20 pb-5"
+              className="flex justify-center pb-5"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -110,7 +111,7 @@ function Home({ setSelectedPage }: Props) {
         </div>
 
       </div>
-      <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-center">
+      <div className="flex basis-4/5 justify-center mt-5 md:z-10 md:ml-40 md:mt-16">
         <img src={HomePageMainImage} alt="home-main-image" />
       </div>
       <ScrollToTop smooth component={<ChevronDoubleUpIcon className="animate-pulse"/>} />
