@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { SelectedPage } from "@/shared/types";
+import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 
 type Props = {
@@ -34,10 +35,12 @@ const About = ({setSelectedPage}: Props) => {
 
   return <section
       id="about"
-      // className="mx-auto min-h-full w-3/5 py-20"
-      className="mx-auto w-3/5 py-20"
+      className="mx-auto min-h-full md:w-3/5 w-4/5 py-20"
     >
-      <div className="md:my-5" ref={pageRef}>
+      <motion.div 
+        className="md:my-5" ref={pageRef}
+        onViewportEnter={() => setSelectedPage(SelectedPage.Contact)}
+      >
         <HText>About Me</HText>
         <div className="flex items-center">
           <p className="my-5 text-xl">Hi, I am HJ &nbsp;</p>
@@ -53,7 +56,7 @@ const About = ({setSelectedPage}: Props) => {
         <p className="text-md py-2">
         Logical thinker and problem-solver at heart, seeking to pursue new-found passion for coding and technology.
         </p>
-      </div>
+      </motion.div>
 
   </section>
 };

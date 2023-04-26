@@ -5,6 +5,7 @@ import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
 import About from "@/scenes/about";
 import Work from "@/scenes/work";
+import Contact from "@/scenes/contact";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home); // using enum
@@ -33,6 +34,7 @@ function App() {
       <Home setSelectedPage={setSelectedPage} />
       <About setSelectedPage={setSelectedPage} />
       <Work setSelectedPage={setSelectedPage} />
+      <Contact setSelectedPage={setSelectedPage} />
     </div>
   )
 }

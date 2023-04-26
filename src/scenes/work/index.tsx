@@ -32,6 +32,13 @@ const works: Array<WorkType> = [
   },
 ];
 
+const container = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.2 }
+  }
+}
+
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 }
@@ -39,16 +46,20 @@ type Props = {
 function Works({ setSelectedPage }: Props) {
   return <section
     id="work"
-    className="mx-auto min-h-full w-3/5 py-20"
+    className="mx-auto min-h-full md:w-3/5 w-4/5 py-20"
   >
-    <div className="md:my-5">
+    <motion.div 
+      className="md:my-5"
+      onViewportEnter={() => setSelectedPage(SelectedPage.Work)}
+    >
       <HText>Portfolio</HText>
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.Work)}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={container}
       >
         {/* map through works */}
-        {/* <div className="mt-5 items-center justify-between gap-8 md:flex"> */}
-        {/* <div className="mt-5"> */}
         <ul className="flex flex-wrap list-none mt-5 p-0">
           {works.map((work: WorkType) => (
             <Work
@@ -61,9 +72,8 @@ function Works({ setSelectedPage }: Props) {
             />
           ))}
         </ul>
-        {/* </div> */}
       </motion.div>
-    </div>
+    </motion.div>
 
   </section>
 };

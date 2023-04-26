@@ -1,9 +1,7 @@
 import { SelectedPage } from "@/shared/types";
-// import HomePageMainImage from "@/assets/HomePageMainImage.png";
 import HomePageMainImage from "@/assets/MainImageFace.png";
-// import HomePageMainText from "@/assets/HomePageMainText.png";
 import HomePageMainText from "@/assets/logo_lg.png";
-import ActionButton from "@/shared/ActionButton";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import ScrollToTop from "react-scroll-to-top";
 import { ChevronDoubleUpIcon } from "@heroicons/react/24/solid"; 
 import { motion } from "framer-motion";
@@ -105,8 +103,20 @@ function Home({ setSelectedPage }: Props) {
               visible: { opacity: 1, x: 0},
             }}
           >
-            <ActionButton setSelectedPage={setSelectedPage}>Portfolio</ActionButton>
-            <ActionButton setSelectedPage={setSelectedPage}>Contact</ActionButton>
+            <AnchorLink
+              className="rounded-md bg-primary-100 px-10 py-2 hover:bg-primary-300"
+              onClick={() => setSelectedPage(SelectedPage.Work)}
+              href="#work"
+            >
+              Portfolio
+            </AnchorLink>
+            <AnchorLink
+              className="rounded-md bg-primary-100 px-4 py-2 hover:bg-primary-300"
+              onClick={() => setSelectedPage(SelectedPage.Contact)}
+              href="#contact"
+            >
+              <button>Contact Me</button>
+            </AnchorLink>
           </motion.div>
         </div>
 

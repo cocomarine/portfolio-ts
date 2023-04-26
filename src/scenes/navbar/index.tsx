@@ -7,7 +7,6 @@ import Logo from "@/assets/logo_s.png";
 import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
-import ActionButton from "@/shared/ActionButton";
 
 type Props = {
   isTopOfPage: boolean;
@@ -58,37 +57,27 @@ return (
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
                 />
-                {/* <Link 
-                  page="LinkedIn" 
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                />
-                <Link 
-                  page="GitHub" 
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                /> */}
-                <button
-                  // onClick={}
-                >                  
+                <a 
+                  href="https://www.linkedin.com/in/hj-kang07"
+                  target="_blank"
+                  rel="noreferrer"
+                >                
                   <FontAwesomeIcon 
                     icon={faLinkedin}
                     className="h-5 w-5 hover:text-primary-300"
                   />
-                </button>
-                <button
-                  // onClick={}
-                >                  
+                </a>
+                <a 
+                  href="https://github.com/cocomarine"
+                  target="_blank"
+                  rel="noreferrer"
+                >                 
                   <FontAwesomeIcon 
                     icon={faGithub}
                     className="h-5 w-5 hover:text-primary-300"
                   />
-                </button>
+                </a>
               </div>
-              {/* <div className={`${flexBetween} gap-8`}>
-                <p>Sign In</p>
-                <ActionButton setSelectedPage={setSelectedPage}>Become a Member</ActionButton>
-              </div> */}
             </div>) : (
               <button
                 className="rounded-full bg-taupe p-2"
@@ -135,22 +124,26 @@ return (
             setSelectedPage={setSelectedPage}
           />
           <div>
-            <button
-              // onClick={}
+            <a 
+              href="https://www.linkedin.com/in/hj-kang07"
+              target="_blank"
+              rel="noreferrer"
             >                  
               <FontAwesomeIcon 
                 icon={faLinkedin}
                 className="h-6 w-6 pr-5 hover:text-primary-300"
               />
-            </button>
-            <button
-              // onClick={}
+            </a>
+            <a 
+              href="https://github.com/cocomarine"
+              target="_blank"
+              rel="noreferrer"
             >                  
               <FontAwesomeIcon 
                 icon={faGithub}
                 className="h-6 w-6 hover:text-primary-300"
               />
-            </button>
+            </a>
           </div>
         </div>
       </div>

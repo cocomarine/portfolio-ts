@@ -14,3 +14,9 @@ export interface WorkType {
   demo: string,
   github: string,
 }
+
+export interface ContactType {
+  icon: JSX.Element,
+  mode: string,
+  link: string,
+}
