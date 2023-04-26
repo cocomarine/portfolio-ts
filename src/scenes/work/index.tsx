@@ -6,20 +6,29 @@ import { motion } from "framer-motion";
 
 const works: Array<WorkType> = [
   {
-    title: "work1",
-    description: "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et."
+    title: "huddleUp",
+    description: "A meet-up planner web application created by using React, NodeJS, ExpressJS framework and PostgreSQL run in a docker container.",
+    demo: "https://www.youtube.com/watch?v=Ccn77_NhKuw", 
+    // "https://www.youtube.com/watch?v=BYwcvPcPJn8",
+    github: "https://github.com/cocomarine/huddle-up-frontend",
   },
   {
     title: "work2",
-    description: "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et."
+    description: "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
+    demo: "",
+    github: "",
   },
   {
     title: "work3",
-    description: "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et."
+    description: "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
+    demo: "",
+    github: ""
   },
   {
     title: "work4",
-    description: "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et."
+    description: "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
+    demo: "",
+    github: ""
   },
 ];
 
@@ -39,16 +48,20 @@ function Works({ setSelectedPage }: Props) {
       >
         {/* map through works */}
         {/* <div className="mt-5 items-center justify-between gap-8 md:flex"> */}
-        <div className="mt-5">
+        {/* <div className="mt-5"> */}
+        <ul className="flex flex-wrap list-none mt-5 p-0">
           {works.map((work: WorkType) => (
             <Work
               key={work.title}
               title={work.title}
               description={work.description}
+              demo={work.demo}
+              github={work.github}
               setSelectedPage={setSelectedPage}
             />
           ))}
-        </div>
+        </ul>
+        {/* </div> */}
       </motion.div>
     </div>
 

@@ -11,4 +11,6 @@ export enum SelectedPage {
 export interface WorkType {
   title: string,
   description: string,
+  demo: string,
+  github: string,
 }
