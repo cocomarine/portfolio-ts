@@ -28,11 +28,16 @@ module.exports = {
         "gray-500": "#5E0000",
         "taupe": "#4c453a",
         "black": "#060606",
-        "primary-100": "#FFE1E0",
-        "primary-300": "#FFA6A3",
-        "primary-500": "#FF6B66",
-        "secondary-400": "#FFCD5B",
-        "secondary-500": "#FFC132",
+        "primary-100": "#A6DDD9",
+        "primary-300": "#7ACDC7",
+        "primary-500": "#3EA39C",
+        "secondary-400": "#FED9D7", 
+        "secondary-500": "#FCA09C", 
+        // "primary-100": "#FFE1E0",
+        // "primary-300": "#FFA6A3",
+        // "primary-500": "#FF6B66", // dark orange-pink
+        // "secondary-400": "#FFCD5B", // yellow
+        // "secondary-500": "#FFC132", // darker yellow
       }, 
       backgroundImage: (theme) => ({
         "gradient-yellowred": "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",

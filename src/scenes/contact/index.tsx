@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin  } from "@fortawesome/free-brands-svg-icons";
 
-// import ContactPageGraphic from "@/assets/ContactPageGraphic.png";
 import HText from "@/shared/HText";
 import Contacts from "./Contacts";
 
@@ -49,7 +48,7 @@ type Props = {
 }
 
 const Contact = ({ setSelectedPage }: Props) => {
-  const inputStyles = `mb-5 w-full rounded-lg bg-primary-300
+  const inputStyles = `mb-5 w-full rounded-lg bg-primary-100
   px-5 py-3 placeholder-white`;
 
   const {
@@ -180,34 +179,13 @@ const Contact = ({ setSelectedPage }: Props) => {
 
             <button
               type="submit"
-              className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
+              className="mt-5 rounded-lg bg-secondary-400 px-20 py-3 transition duration-500 hover:text-white hover:bg-secondary-500"
             >
               SUBMIT
             </button>
 
           </form>
         </motion.div>
-
-        {/* <motion.div
-          className="relative mt-16 basis-2/5 md:mt-0"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
-          {contacts.map((contact: ContactType) => (
-            <Contacts
-              key={contact.mode}
-              icon={contact.icon}
-              mode={contact.mode}
-              link={contact.link}
-            />
-          ))}
-        </motion.div> */}
       </div>
     </motion.div>
   </section>

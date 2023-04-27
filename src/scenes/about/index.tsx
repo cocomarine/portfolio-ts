@@ -40,19 +40,19 @@ const About = ({setSelectedPage}: Props) => {
     >
       <motion.div 
         className="md:my-5" ref={pageRef}
-        onViewportEnter={() => setSelectedPage(SelectedPage.Contact)}
+        onViewportEnter={() => setSelectedPage(SelectedPage.About)}
       >
         <HText>About Me</HText>
         <div className="flex items-center">
           <p className="my-5 text-xl">Hi, I am HJ &nbsp;</p>
           <p className={`text-3xl rotate-12 ${isVisible ? 'animate-wave' : ''}`}>🤚</p>
         </div>
-        <p className="text-md py-2">As a skilled software developer, I have extensive experience working with 
-        JavaScript, TypeScript, React, Node.js, and Python. Additionally, I am well-versed in the core concepts 
-        and tools of DevOps. 
+        <p className="text-md py-2">I am a software developer skilled with 
+        <span className="font-bold">JavaScript, TypeScript, React, Node.js, and Python</span> and familiar with the core concepts 
+        and tools of <span className="font-bold">DevOps</span>. 
         </p>
         <motion.div
-          className="flex items-center justify-center py-5 gap-5"
+          className="flex flex-wrap items-center justify-center py-5 gap-4"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -73,6 +73,13 @@ const About = ({setSelectedPage}: Props) => {
           ))}
         
         </motion.div>
+        <p className="text-md py-2">I recently completed a comprehensive fullstack developer bootcamp at <span className="font-bold">CommandShift </span>
+         where I honed my programming skills and continue to XXXXX.
+        </p>
+        <p className="text-md py-2">I recently completed a comprehensive fullstack developer bootcamp at <span className="font-bold">CommandShift </span>
+         where I honed my programming skills. The course covered a wide range of topics, from foundational programming concepts 
+        to developing web applications using the React framework with API servers and databases.
+        </p>
         <p className="text-md py-2">Throughout my years of working in scientific research, I have demonstrated 
         a commitment to teamwork, dedication, and integrity, consistently delivering high-quality outcomes.
         </p>

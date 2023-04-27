@@ -89,14 +89,14 @@ function Home({ setSelectedPage }: Props) {
             }}
           >
             <AnchorLink
-              className="rounded-md bg-primary-100 px-8 py-2 hover:bg-primary-300"
+              className="rounded-md bg-primary-100 px-8 py-2 hover:bg-primary-300 hover:text-white"
               onClick={() => setSelectedPage(SelectedPage.Work)}
               href="#work"
             >
               Portfolio
             </AnchorLink>
             <AnchorLink
-              className="rounded-md bg-primary-100 px-4 py-2 hover:bg-primary-300"
+              className="rounded-md bg-primary-100 px-4 py-2 hover:bg-primary-300 hover:text-white"
               onClick={() => setSelectedPage(SelectedPage.Contact)}
               href="#contact"
             >
