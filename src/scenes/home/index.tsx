@@ -68,7 +68,7 @@ function Home({ setSelectedPage }: Props) {
           >
             {filteredIcons.map((icon: TechIcon) => (
               <img 
-                className="w-12"
+                className="md:w-12 w-10"
                 alt={`${icon.name} logo`}
                 src={icon.url}
                 key={icon.name} 
@@ -89,14 +89,14 @@ function Home({ setSelectedPage }: Props) {
             }}
           >
             <AnchorLink
-              className="rounded-md bg-primary-100 px-8 py-2 hover:bg-primary-300 hover:text-white"
+              className="rounded-md bg-primary-100 px-6 py-2 text-sm md:px-8 md:text-base hover:bg-primary-300 hover:text-white"
               onClick={() => setSelectedPage(SelectedPage.Work)}
               href="#work"
             >
               Portfolio
             </AnchorLink>
             <AnchorLink
-              className="rounded-md bg-primary-100 px-4 py-2 hover:bg-primary-300 hover:text-white"
+              className="rounded-md bg-primary-100 px-2 py-2 text-sm md:px-4 md:text-base hover:bg-primary-300 hover:text-white"
               onClick={() => setSelectedPage(SelectedPage.Contact)}
               href="#contact"
             >

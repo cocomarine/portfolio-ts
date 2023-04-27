@@ -47,12 +47,12 @@ const About = ({setSelectedPage}: Props) => {
           <p className="my-5 text-xl">Hi, I am HJ &nbsp;</p>
           <p className={`text-3xl rotate-12 ${isVisible ? 'animate-wave' : ''}`}>🤚</p>
         </div>
-        <p className="text-md py-2">I am a software developer skilled with 
-        <span className="font-bold">JavaScript, TypeScript, React, Node.js, and Python</span> and familiar with the core concepts 
+        <p className="text-md py-2">I am a former research scientist turned full-stack developer skilled in
+        <span className="font-bold"> JavaScript, TypeScript, React, Node.js, and Python</span> and familiar with the core concepts 
         and tools of <span className="font-bold">DevOps</span>. 
         </p>
         <motion.div
-          className="flex flex-wrap items-center justify-center py-5 gap-4"
+          className="flex flex-wrap items-center justify-center py-5 gap-3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -65,7 +65,7 @@ const About = ({setSelectedPage}: Props) => {
           
           {icons.map((icon: TechIcon) => (
             <img 
-              className="w-12"
+              className="md:w-12 w-8"
               alt={`${icon.name} logo`}
               src={icon.url}
               key={icon.name} 
@@ -73,18 +73,11 @@ const About = ({setSelectedPage}: Props) => {
           ))}
         
         </motion.div>
-        <p className="text-md py-2">I recently completed a comprehensive fullstack developer bootcamp at <span className="font-bold">CommandShift </span>
-         where I honed my programming skills and continue to XXXXX.
+        <p className="text-md py-2">I completed a comprehensive full-stack software engineering course at 
+        <span className="font-bold"> CommandShift </span> and a DevOps course <span className="font-bold"> DevNet Skills </span>at The Open University/Cisco.
         </p>
-        <p className="text-md py-2">I recently completed a comprehensive fullstack developer bootcamp at <span className="font-bold">CommandShift </span>
-         where I honed my programming skills. The course covered a wide range of topics, from foundational programming concepts 
-        to developing web applications using the React framework with API servers and databases.
-        </p>
-        <p className="text-md py-2">Throughout my years of working in scientific research, I have demonstrated 
-        a commitment to teamwork, dedication, and integrity, consistently delivering high-quality outcomes.
-        </p>
-        <p className="text-md py-2">
-        I thrive on logical thinking and problem-solving, and am excited to pursue my passion for coding and technology in new and exciting ways.
+        <p className="text-md py-2">As a proven <span className="font-bold"> team player </span> with years of experience in multidisciplinary research, 
+        I am a <span className="font-bold"> logical thinker </span> and <span className="font-bold"> problem-solver </span> at heart, eager to pursue my passion for coding and technology with dedication and integrity.
         </p>
       </motion.div>
 

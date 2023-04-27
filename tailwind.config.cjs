@@ -33,11 +33,6 @@ module.exports = {
         "primary-500": "#3EA39C",
         "secondary-400": "#FED9D7", 
         "secondary-500": "#FCA09C", 
-        // "primary-100": "#FFE1E0",
-        // "primary-300": "#FFA6A3",
-        // "primary-500": "#FF6B66", // dark orange-pink
-        // "secondary-400": "#FFCD5B", // yellow
-        // "secondary-500": "#FFC132", // darker yellow
       }, 
       backgroundImage: (theme) => ({
         "gradient-yellowred": "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
@@ -47,12 +42,6 @@ module.exports = {
         dmsans: ["DM Sans", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"] 
       },
-      content: {
-        evolvetext: "url('./assets/EvolveText.png')",
-        abstractwaves: "url('./assets/AbstractWaves.png')",
-        sparkles: "url('./assets/Sparkles.png')",
-        circles: "url('./assets/Circles.png')",
-      }
     },
     screens: {
       xs: "480px",

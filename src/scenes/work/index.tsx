@@ -18,17 +18,17 @@ const works: Array<WorkType> = [
     github: "https://github.com/cocomarine/surreal-estate",
   },
   {
-    title: "work3",
-    description: "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
-    demo: "",
-    github: ""
+    title: "Weather App",
+    description: "A weather app created by using React and tested using React Testing Library.",
+    demo: "https://www.youtube.com/watch?v=LXJBPxeLS2Q",
+    github: "https://github.com/cocomarine/weather-app"
   },
-  {
-    title: "work4",
-    description: "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
-    demo: "",
-    github: ""
-  },
+  // {
+  //   title: "work4",
+  //   description: "",
+  //   demo: "",
+  //   github: ""
+  // },
 ];
 
 const container = {

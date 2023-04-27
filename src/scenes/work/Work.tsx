@@ -59,7 +59,7 @@ const Work = ({ title, description, demo, github, setSelectedPage }: Props) => {
           <p className="leading-normal mb-4">{description}</p>
           <p>
             <a
-              className="hover:text-primary-300 transition duration-500"
+              className="hover:text-secondary-500 transition duration-500"
               href={github}
               target="_blank"
               rel="noreferrer"
