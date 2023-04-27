@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef } from "react";
 import { WorkType, SelectedPage } from "@/shared/types";
 import HText from "@/shared/HText";
 import Work from "./Work";
@@ -13,10 +12,10 @@ const works: Array<WorkType> = [
     github: "https://github.com/cocomarine/huddle-up-frontend",
   },
   {
-    title: "work2",
-    description: "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
-    demo: "",
-    github: "",
+    title: "Surreal Estate",
+    description: "A property search engine app created using React with integration of MongoDB and Facebook login and tested using React Testing Library",
+    demo: "https://youtu.be/kM8F9_hztGM",
+    github: "https://github.com/cocomarine/surreal-estate",
   },
   {
     title: "work3",

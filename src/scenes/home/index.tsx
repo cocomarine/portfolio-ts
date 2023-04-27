@@ -1,6 +1,7 @@
 import { SelectedPage } from "@/shared/types";
 import HomePageMainImage from "@/assets/MainImageFace.png";
 import HomePageMainText from "@/assets/logo_lg.png";
+import { TechIcon, icons, iconsForHome } from "@/shared/techIcons";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import ScrollToTop from "react-scroll-to-top";
 import { ChevronDoubleUpIcon } from "@heroicons/react/24/solid"; 
@@ -11,6 +12,8 @@ type Props = {
 }
 
 function Home({ setSelectedPage }: Props) {
+  const filteredIcons = icons.filter(icon => iconsForHome.includes(icon.name));
+
   return <section
     id="home"
     className='gap-16 bg-gray-20 py-10 md:h-full md:pb-0'
@@ -63,32 +66,14 @@ function Home({ setSelectedPage }: Props) {
               visible: { opacity: 1, x: 0},
             }}
           >
-            {/* <p className='text-center text-md py-3'>To put tech stack icons</p> */}
-            
-            <img
-              className="w-12"
-              alt="javascript logo"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" 
-            />
-            <img 
-              className="w-12"
-              alt="typescript logo"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"  
-            />
-            <img 
-              className="w-16"
-              alt="nodejs logo"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" 
-            />
-            {/* <img
-              className="w-12"
-              alt="python logo" 
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" 
-            /> */}
-            <img
-              className="w-14"
-              alt="reactjs logo"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+            {filteredIcons.map((icon: TechIcon) => (
+              <img 
+                className="w-12"
+                alt={`${icon.name} logo`}
+                src={icon.url}
+                key={icon.name} 
+              />
+            ))}
           
           </motion.div>
 
@@ -104,7 +89,7 @@ function Home({ setSelectedPage }: Props) {
             }}
           >
             <AnchorLink
-              className="rounded-md bg-primary-100 px-10 py-2 hover:bg-primary-300"
+              className="rounded-md bg-primary-100 px-8 py-2 hover:bg-primary-300"
               onClick={() => setSelectedPage(SelectedPage.Work)}
               href="#work"
             >
