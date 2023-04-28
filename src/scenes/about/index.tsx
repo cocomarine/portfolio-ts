@@ -75,9 +75,14 @@ const About = ({setSelectedPage}: Props) => {
         </motion.div>
         <p className="text-md py-2">I completed a comprehensive full-stack software engineering course at 
         <span className="font-bold"> CommandShift </span> and a DevOps course <span className="font-bold"> DevNet Skills </span>at The Open University/Cisco.
+        I am excited to utilise and expand my skills to develop innovative solutions that can have far-reaching positive impacts.
         </p>
-        <p className="text-md py-2">As a proven <span className="font-bold"> team player </span> with years of experience in multidisciplinary research, 
+        {/* <p className="text-md py-2">As a proven <span className="font-bold"> team player </span> with years of experience in multidisciplinary research, 
         I am a <span className="font-bold"> logical thinker </span> and <span className="font-bold"> problem-solver </span> at heart, eager to pursue my passion for coding and technology with dedication and integrity.
+        </p> */}
+        <p className="text-md py-2">
+        With years of experience in multidisciplinary research, I have proven myself as a<span className="font-bold"> team player with a logical and problem-solving mindset </span>. 
+        Driven by a passion for coding and technology, I am excited to embark on a career in the field, bringing my <span className="font-bold"> integrity and dedication </span>to every project.
         </p>
       </motion.div>
 

@@ -13,6 +13,7 @@ export interface WorkType {
   description: string,
   demo: string,
   github: string,
+  extra?: string,
 }
 
 export interface ContactType {

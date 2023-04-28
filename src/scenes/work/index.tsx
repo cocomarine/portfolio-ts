@@ -8,8 +8,8 @@ const works: Array<WorkType> = [
     title: "huddleUp",
     description: "A meet-up planner web application created by using React, NodeJS, ExpressJS framework and PostgreSQL run in a docker container.",
     demo: "https://www.youtube.com/watch?v=Ccn77_NhKuw", 
-    // "https://www.youtube.com/watch?v=BYwcvPcPJn8",
     github: "https://github.com/cocomarine/huddle-up-frontend",
+    extra: "https://www.youtube.com/watch?v=BYwcvPcPJn8",
   },
   {
     title: "Surreal Estate",
@@ -67,6 +67,7 @@ function Works({ setSelectedPage }: Props) {
               description={work.description}
               demo={work.demo}
               github={work.github}
+              extra={work.extra}
               setSelectedPage={setSelectedPage}
             />
           ))}

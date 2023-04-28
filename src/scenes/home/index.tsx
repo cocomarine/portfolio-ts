@@ -19,7 +19,7 @@ function Home({ setSelectedPage }: Props) {
     className='gap-16 bg-gray-20 py-10 md:h-full md:pb-0'
   >
     <motion.div 
-      className='md:flex mx-auto w-3/5 items-center justify-center md:h-5/6'
+      className='md:flex mx-auto w-1/2 items-center justify-center md:h-5/6'
       onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
     >
       <div className='z-10 mt-24 md:w-3/5'>
@@ -106,7 +106,8 @@ function Home({ setSelectedPage }: Props) {
         </div>
 
       </div>
-      <div className="flex basis-4/5 justify-center mt-5 md:z-10 md:ml-40 md:mt-16">
+      {/* <div className="flex basis-4/5 justify-center mt-5 md:z-10 md:ml-40 md:mt-16"> */}
+      <div className="flex basis-4/5 justify-center mt-5 md:z-10 md:ml-30 md:mt-16">
         <img src={HomePageMainImage} alt="home-main-image" />
       </div>
       <ScrollToTop smooth component={<ChevronDoubleUpIcon className="animate-pulse"/>} />

@@ -1,6 +1,6 @@
 import ReactPlayer from "react-player/youtube";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 import { SelectedPage } from "@/shared/types";
 
@@ -14,10 +14,11 @@ type Props = {
   description: string,
   demo: string,
   github: string,
+  extra?: string,
   setSelectedPage: (value: SelectedPage) => void;
 }
 
-const Work = ({ title, description, demo, github, setSelectedPage }: Props) => {
+const Work = ({ title, description, demo, github, extra, setSelectedPage }: Props) => {
   return (
     // container for a work
     <li className="w-full lg:w-1/2 lg:p-4 p-2">
@@ -57,20 +58,40 @@ const Work = ({ title, description, demo, github, setSelectedPage }: Props) => {
         >
           <h2 className="text-lg font-bold mb-2">{title}</h2>
           <p className="leading-normal mb-4">{description}</p>
-          <p>
-            <a
-              className="hover:text-secondary-500 transition duration-500"
-              href={github}
-              target="_blank"
-              rel="noreferrer"
-            >                 
-              <FontAwesomeIcon 
-                icon={faGithub}
-                className="h-5 w-5"
-              />
-              &nbsp;GitHub
-              </a>
+
+          <p className="flex gap-5">
+            <p>
+              <a
+                className="hover:text-secondary-500 transition duration-500"
+                href={github}
+                target="_blank"
+                rel="noreferrer"
+              >                 
+                <FontAwesomeIcon 
+                  icon={faGithub}
+                  className="h-5 w-5"
+                />
+                &nbsp;GitHub
+                </a>
+            </p>
+
+            {extra && <p>
+              <a
+                className="hover:text-secondary-500 transition duration-500"
+                href={extra}
+                target="_blank"
+                rel="noreferrer"
+              >                 
+                <FontAwesomeIcon 
+                  icon={faYoutube}
+                  className="h-5 w-5"
+                />
+                &nbsp;Presentation
+                </a>
+            </p>
+            }
           </p>
+
         </motion.div>
       </motion.div>
     </li>

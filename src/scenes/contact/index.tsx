@@ -64,7 +64,7 @@ const Contact = ({ setSelectedPage }: Props) => {
     }
   }
 
-  return <section id="contact" className="mx-auto md:w-3/5 w-4/5 pt-24 pb-32">
+  return <section id="contact" className="mx-auto md:w-3/5 w-4/5 pt-24 pb-8">
     <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Contact)}>
       {/* header */}
       <motion.div
@@ -188,6 +188,9 @@ const Contact = ({ setSelectedPage }: Props) => {
         </motion.div>
       </div>
     </motion.div>
+    <div className="text-center text-xs mt-20">
+      <p>Made by HJ Kang © 2023</p>
+    </div>
   </section>
 }
 
