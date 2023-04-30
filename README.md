@@ -2,6 +2,8 @@
 
 This is my personal portfolio website built with TypeScript, React and TailwindCSS. 
 
+<img src="src/assets/hjkang_portfolio_demo_desktop_opt.gif" width="50%" alt="hj's portfolio - animated gif demo" title="Animated gif demo"/>
+
 ## Features
 - Responsive design optimized for desktop and mobile devices
 - Interactive navigation menu with smooth scrolling to page sections
