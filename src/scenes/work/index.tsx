@@ -23,12 +23,12 @@ const works: Array<WorkType> = [
     demo: "https://www.youtube.com/watch?v=LXJBPxeLS2Q",
     github: "https://github.com/cocomarine/weather-app"
   },
-  // {
-  //   title: "work4",
-  //   description: "",
-  //   demo: "",
-  //   github: ""
-  // },
+  {
+    title: "Portfolio",
+    description: "My portfolio site created using React, TypeScript and TailwindCSS.",
+    demo: "https://youtube.com/shorts/gd98Vz40DMo",
+    github: "https://github.com/cocomarine/portfolio-ts"
+  },
 ];
 
 const container = {
