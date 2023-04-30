@@ -52,7 +52,7 @@ function Home({ setSelectedPage }: Props) {
               visible: { opacity: 1, x: 0},
             }}
           >
-            <p className='text-center text-xl pb-3'>Software Developer</p>
+            <p className='text-center text-lg md:text-xl pb-3'>Software Developer</p>
           </motion.div>
 
           <motion.div
@@ -68,7 +68,7 @@ function Home({ setSelectedPage }: Props) {
           >
             {filteredIcons.map((icon: TechIcon) => (
               <img 
-                className="md:w-12 w-10"
+                className="md:w-12 w-8"
                 alt={`${icon.name} logo`}
                 src={icon.url}
                 key={icon.name} 
@@ -89,14 +89,14 @@ function Home({ setSelectedPage }: Props) {
             }}
           >
             <AnchorLink
-              className="rounded-md bg-primary-100 px-6 py-2 text-sm md:px-8 md:text-base hover:bg-primary-300 hover:text-white"
+              className="rounded-md bg-primary-100 px-4 py-2 text-xs md:px-7 md:text-base hover:bg-primary-300 hover:text-white"
               onClick={() => setSelectedPage(SelectedPage.Work)}
               href="#work"
             >
               Portfolio
             </AnchorLink>
             <AnchorLink
-              className="rounded-md bg-primary-100 px-2 py-2 text-sm md:px-4 md:text-base hover:bg-primary-300 hover:text-white"
+              className="rounded-md bg-primary-100 px-2 py-2 text-xs md:px-4 md:text-base hover:bg-primary-300 hover:text-white"
               onClick={() => setSelectedPage(SelectedPage.Contact)}
               href="#contact"
             >
