@@ -1,6 +1,7 @@
 # My Portfolio
 
 This is my personal portfolio website built with TypeScript, React and TailwindCSS. 
+- Portfolio: https://hjkang.pages.dev/
 
 <img src="src/assets/hjkang_portfolio_demo_desktop_opt.gif" width="50%" alt="hj's portfolio - animated gif demo" title="Animated gif demo"/>
 
