@@ -9,11 +9,18 @@ const works: Array<WorkType> = [
     description: "A meet-up planner web application created by using React, NodeJS, ExpressJS framework and PostgreSQL run in a docker container.",
     demo: "https://www.youtube.com/watch?v=Ccn77_NhKuw", 
     github: "https://github.com/cocomarine/huddle-up-frontend",
-    extra: "https://www.youtube.com/watch?v=BYwcvPcPJn8",
+    presentation: "https://www.youtube.com/watch?v=BYwcvPcPJn8",
+  },
+  {
+    title: "Finance App",
+    description: "A fullstack MERN app for tracking financial metrics with a simple machine learning prediction created using TypeScript, Redux Toolkit, Material-UI, Recharts, NodeJS, ExpressJS and MongoDB.",
+    demo: "https://youtu.be/4QkMTxRqNCM",
+    github: "https://github.com/cocomarine/finance-app-ts",
+    liveapp: "https://finance-app-hj.vercel.app"
   },
   {
     title: "Surreal Estate",
-    description: "A property search engine app created using React with integration of MongoDB and Facebook login and tested using React Testing Library",
+    description: "A property search engine app created using React with integration of MongoDB and Facebook login and tested using React Testing Library.",
     demo: "https://youtu.be/kM8F9_hztGM",
     github: "https://github.com/cocomarine/surreal-estate",
   },
@@ -67,7 +74,8 @@ function Works({ setSelectedPage }: Props) {
               description={work.description}
               demo={work.demo}
               github={work.github}
-              extra={work.extra}
+              presentation={work.presentation}
+              liveapp={work.liveapp}
               setSelectedPage={setSelectedPage}
             />
           ))}

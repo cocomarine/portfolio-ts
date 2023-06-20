@@ -1,6 +1,7 @@
 import ReactPlayer from "react-player/youtube";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import { SelectedPage } from "@/shared/types";
 
@@ -14,11 +15,12 @@ type Props = {
   description: string,
   demo: string,
   github: string,
-  extra?: string,
+  presentation?: string,
+  liveapp?: string,
   setSelectedPage: (value: SelectedPage) => void;
 }
 
-const Work = ({ title, description, demo, github, extra, setSelectedPage }: Props) => {
+const Work = ({ title, description, demo, github, presentation, liveapp, setSelectedPage }: Props) => {
   return (
     // container for a work
     <li className="w-full lg:w-1/2 lg:p-4 p-2">
@@ -75,10 +77,10 @@ const Work = ({ title, description, demo, github, extra, setSelectedPage }: Prop
                 </a>
             </p>
 
-            {extra && <p>
+            {presentation && <p>
               <a
                 className="hover:text-secondary-500 transition duration-500"
-                href={extra}
+                href={presentation}
                 target="_blank"
                 rel="noreferrer"
               >                 
@@ -87,6 +89,22 @@ const Work = ({ title, description, demo, github, extra, setSelectedPage }: Prop
                   className="h-5 w-5"
                 />
                 &nbsp;Presentation
+                </a>
+            </p>
+            }
+
+            {liveapp && <p>
+              <a
+                className="hover:text-secondary-500 transition duration-500"
+                href={liveapp}
+                target="_blank"
+                rel="noreferrer"
+              >                 
+                <FontAwesomeIcon 
+                  icon={faCirclePlay}
+                  className="h-5 w-5"
+                />
+                &nbsp;Live App
                 </a>
             </p>
             }
